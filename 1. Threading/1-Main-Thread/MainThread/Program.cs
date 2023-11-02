@@ -15,6 +15,8 @@
         Console.WriteLine(mainThread.Name);
 
         Method1();
+
+        Console.ReadKey();
     }
 
     static void Method1() 
