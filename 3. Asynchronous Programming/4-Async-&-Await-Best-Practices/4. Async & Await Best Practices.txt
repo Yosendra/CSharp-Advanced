@@ -1,0 +1,33 @@
+Best Practices of 'async' & 'await'
+
+○ Avoid 'async void'
+  - Avoid using async void methods, especially in top-level event handlers or constructor.
+  - Async void methods can't be awaited and can make it difficult to catch the unhandled exceptions.
+  
+○ Return Task or Task<T>
+  - Make sure the return of asynchronous methods be either Task (equivalent to void) or Task<TResult> (equivalent to returning TResult)
+  
+○ Handle Exceptions Properly
+  - Always handle exceptions that might occur in async methods.
+  - Use try-catch blocks to catch and handle exceptions approriately.
+  - If an exceptions is unhandled in an async method, it can crash your applications
+  
+○ Always use async/await for I/O-Bound Operations
+  - async & await are best suited for I/O-bound operations, such as file I/O, network requests, or database queries. There is no performance benefit in case of async/await with CPU-bound operations.
+  
+○ Async All The Way
+  - When you have an asynchronous method, make sure to propagate the asynchronouny all the way up the call stack. Asynchronous method should be spread from most bottom (e.g. data access layer) to top level of call stack.
+  
+○ Avoid using Task.Run() in asynchronous method
+  - Avoid using Task.Run to offload synchronous work to a background thread within an async method.
+  - This can lead to thread pool exhaustion and decrease performance. Instead, use 'await'
+  - Use Task.Run only when there is no async method provided to execute some CPU-bound operation (e.g. large amount of code, or big amount of loops to process gigabits of data).
+  
+○ Use CancellationToken for Cancellation
+  - Pass CancellationToken to your async methods when cancellation is possible. This allows you to cancel long-running tasks gracefully.
+  - You can provide the overloading of the same async method with cancellation token parameter added.
+  - Be sure to check for cancellation periodically within your async method.
+  
+○ Measure and Optimize
+  - Profile your asynchronous code to identify performance bottlenecks and areas that can be optimized.
+  - Tools like Stopwatch and Visual Studio's Diagnostics Tools can help you identify and address performance issue.
