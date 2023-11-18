@@ -1,0 +1,16 @@
+Number System
+○ Decimal (base 10)
+  e.g.	: 100
+  Digit	: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+  
+○ Binary (base 2)
+  e.g. : 0b1100100
+  Digit	: 0, 1
+  
+○ Octal (base 8)
+  e.g. : 0o144
+  Digit	: 0, 1, 2, 3, 4, 5, 6, 7
+  
+○ Hexadecimal (base 16)
+  e.g. : 0x64
+  Digit	: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
