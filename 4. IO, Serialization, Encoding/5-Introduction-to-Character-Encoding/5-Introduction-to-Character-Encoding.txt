@@ -1,0 +1,13 @@
+Encoding -> Writing characters into numbers or any other specific format.
+			Process of converting the set of characters into another different format.
+Decoding -> Converting those back to the original format.
+
+○ ASCII (American Standard Code for Information Interchange)
+  - Each character occupies 7 bits (1 byte).
+  - 128 characters (0 to 127).
+  - Includes all keyboard characters with alphabets, digits, special characters etc.
+
+○ UTF-16 / Unicode (Universal Code)
+  - Each character occupies 2 or 4 bytes (generally considered as 2 bytes)
+  - About 144697 characters (to accomodate more characters especially from another country, not English only like ASCII)
+  - Includes all natural language characters along with ASCII
