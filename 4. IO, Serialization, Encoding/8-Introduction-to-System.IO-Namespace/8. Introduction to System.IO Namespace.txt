@@ -1,0 +1,14 @@
+System.IO namespace -> this namespace contains classes to perform File I/O operations.
+
+Namespace : System.IO 
+Class	  : File
+	    DriveInfo
+	    FileStream
+	    Directory
+	    FileNotException
+	    DirectoryInfo
+	    StreamWriter
+	    StreamReader
+	    BinaryWriter
+	    BinaryReader
+	    etc
