@@ -1,0 +1,17 @@
+Namespace : System.IO
+Class	  : File
+
+○ File class can do something to any file in HDD
+○ File class contains many file operation like :
+   .Create()
+   .Exists()
+   .Open()
+   .Delete()
+   .WriteAllText()
+   .WriteAllLines()
+   .ReadAllText()
+   .ReadAllLines()
+   .Copy()
+   .Move()
+   etc
+○ File is static class, so it contains only static method and this class cannot be instanciated
