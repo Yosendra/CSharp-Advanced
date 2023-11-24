@@ -1,0 +1,7 @@
+1. Create a folder "countries" in "c:\practice"
+2. Create three folders "India", "UK", "USA" in "countries" folder
+3. Create three files "capitals.txt", "sports.txt", and "population.txt" in "countries" folder
+4. Move/rename "countries" as "world"
+5. List the files of "world" folder
+6. List the folders of "world" folder
+7. Delete the "world" folder including its files and sub-folders.
